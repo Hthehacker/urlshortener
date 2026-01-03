@@ -1,0 +1,150 @@
+
+        *{
+            margin: 0;
+            padding: 0;box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .input{
+            height: 4rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border: none;
+            
+        }
+        #search{
+            height: 2rem;
+            width: 20rem;
+            border: 0.3px solid grey;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        #btn{
+            height: 2rem;
+            width: 3.5rem;
+            cursor: pointer;
+            background: rgb(225, 239, 249);
+            border: 0.3px solid rgb(11, 141, 228);
+            border-radius: 10px;
+        }
+        .logo{
+           color: rgb(3, 96, 106);
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            background: whitesmoke;
+            padding: 0 50px;
+        }
+        .header-nav{
+            display: flex;
+            gap: 1rem;
+        }
+        .header li{
+            list-style-type: none;
+        }
+        .header a{
+            font-size: larger;
+            text-decoration: none;
+            color: #6b7c8a;
+        }
+        #output{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        .main-heading{
+            text-align: center;
+            margin-top: 40px;
+            
+        }
+        .main-stuff{
+            margin: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 150px;
+            width: 300px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .footer{
+            color: #EAE0CF;
+            background: #172a31;
+            text-align: center;
+        }
+        .logo li{
+            text-align: center;
+        }
+        #error{
+            text-align: center;
+            color: red;
+        }
+  
+
+        /* about page */
+
+        .container{
+            height: 400px;
+            width: 700px;
+            margin: 100px 300px;
+            padding: 10px;
+            text-align: middle;
+            font-weight: 600;
+            color: white;
+            background: grey;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* constact page */
+
+        .contact-input{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+
+        }
+        .contact-input button{
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }      
+
+        .contact-input input{
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact-input textarea{
+             height: 60px;
+            width: 300px;
+            padding: 5px;
+            border-radius: 5px;
+        }

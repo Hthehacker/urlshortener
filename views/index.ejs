@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL - SHORTNER</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+
+            <div class="header">
+                <div class="logo">
+                <li>
+                    <h1>URL </h1>
+                    <h3>SHORTNER</h3>
+                </li>
+                </div>
+                <ul class="header-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/about">About</a></li>
+                </ul>            
+            </div>
+        </nav>
+    </header>
+
+<form action="/" method="POST">
+  <div class="input">
+    <input type="text" name="url" id="search" placeholder="Enter URL">
+   
+    <button type="submit" id="btn">Short</button>
+   
+  </div>
+   <p id="error"> <%= error %> </p>
+</form>
+<div id="output">
+  <% if (locals.Id) { %>
+    <h4>shortened URL :</h4>
+    <a href="http://localhost:2000/<%= Id%>"><%= Id %></a>
+  <% } %>
+</div>
+
+<main>
+    <div class="main">
+        <div class="main-heading">
+            <h1>Why Use Our URL Shortener?</h1>
+            <p>Discover the advantages and common questions about using our service.</p>
+        </div>
+        <div class="main-stuff">
+            <div class="box">
+                <h3>Why should I use a URL shortener?</h3>
+                <p>URL shorteners make long, complex links cleaner and easier to share. They are ideal for social media, emails, or printed materials.</p>
+             </div>
+            <div class="box">
+                <h3>What are the benefits of short links?</h3>
+                <p>Short links are simpler to manage. They look professional and often include click tracking and analytics for improved marketing insight.</p>
+            </div>
+            <div class="box"> 
+                <h3>Is your service free to use?</h3>
+                <p>Yes! Our URL shortening service is completely free with no hidden fees. You can shorten links and track them at no cost.</p>
+            </div>
+            <!-- <div class="box"> 
+                <h3>Can I track how many times my link was clicked?</h3>
+                <p>Absolutely. Use our Track Link feature to see how many clicks your shortened link gets in real-time.</p>
+            </div> -->
+            <div class="box">
+                <h3>How Does It Work?</h3>
+                <p>Once you paste a long URL and click "Shorten," our system creates a short link. When you visit the short link, it will take you to your original URL.</p>
+            </div>
+            <div class="box">
+                <h3>Is URL Shortening Safe?</h3>
+                <p>Absolutely. We use the Google Safe Browsing API to scan and block harmful or phishing URLs before we shorten them.</p>
+            </div>
+           
+        </div>
+        
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <p>© 2026 Url Shortener. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
