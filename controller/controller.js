@@ -14,8 +14,8 @@ const generateUrl = async (req, res) => {
         redirectUrl :url,
         visitHistory:[]
     })
-    const Shorturl = `${req.protocol}://${req.hostname}/${entry.shortID}`
-   return res.render("index",{Id:entry.shortID,error:null})
+    const Shorturl = `${req.protocol}://${req.get('host')}/${entry.shortID}`
+   return res.render("index",{Id:Shorturl,error:null})
 }
 
 const redirectUrl = async(req,res)=>{
@@ -38,3 +38,4 @@ module.exports = {
     generateUrl
 
 }
+
